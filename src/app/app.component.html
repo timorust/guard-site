@@ -1,0 +1,14 @@
+<h1>Hello</h1>
+
+
+<ng-container *ngIf="userIsOnline; else noUserOnline">
+  <router-outlet></router-outlet>
+</ng-container>
+
+<ng-template #noUserOnline>
+  <button (click)="setUser()">I am agree</button>
+</ng-template>
+
+
+
+
